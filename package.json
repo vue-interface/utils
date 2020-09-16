@@ -1,0 +1,47 @@
+{
+  "name": "@vue-interface/utils",
+  "version": "0.9.20",
+  "description": "Vue progress bar component",
+  "main": "index.js",
+  "scripts": {
+    "release-patch": "npm version patch -m \"%s\" && npm run release;",
+    "release-minor": "npm version minor -m \"%s\" && npm run release;",
+    "release-major": "npm version major -m \"%s\" && npm run release;",
+    "release": "npm run docs:build; git add . -A; git commit; git push --tags origin; npm publish;",
+    "docs:dev": "./node_modules/.bin/vuepress dev docs",
+    "docs:build": "./node_modules/.bin/vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vue-interface/utils.git"
+  },
+  "keywords": [
+    "Utilities",
+    "Vue",
+    "Component",
+    "Tailwind",
+    "Bootstrap"
+  ],
+  "author": "Justin Kimbrell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vue-interface/utils/issues"
+  },
+  "homepage": "https://github.com/vue-interface/utils/docs#readme",
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.4.6",
+    "@vuepress/plugin-register-components": "^1.5.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "jest": "^26.2.2",
+    "markdown-it-meta": "0.0.1",
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-template-constants": "^0.2.1"
+  }
+}
