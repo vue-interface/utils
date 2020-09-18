@@ -1,7 +1,7 @@
 {
   "name": "@vue-interface/utils",
   "version": "0.9.20",
-  "description": "Vue progress bar component",
+  "description": "A utility package for Vue Interface.",
   "main": "index.js",
   "scripts": {
     "release-patch": "npm version patch -m \"%s\" && npm run release;",
