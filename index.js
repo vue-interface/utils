@@ -23,6 +23,7 @@ import now from './src/now';
 import predicate from './src/predicate';
 import prefix from './src/prefix';
 import property from './src/property';
+import readFile from './src/readFile';
 import script from './src/script';
 import sequence from './src/sequence';
 import toNumber from './src/toNumber';
@@ -54,8 +55,9 @@ export {
     matchesProperty,
     now,
     predicate,
-    property,
     prefix,
+    property,
+    readFile,
     script,
     sequence,
     toNumber,
