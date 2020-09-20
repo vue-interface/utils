@@ -1,4 +1,5 @@
 import camelCase from './src/camelCase';
+import capitalize from './src/capitalize';
 import debounce from './src/debounce';
 import deepExtend from './src/deepExtend';
 import find from './src/find';
@@ -33,6 +34,7 @@ import unit from './src/unit';
 
 export {
     camelCase,
+    capitalize,
     debounce,
     deepExtend,
     find,
