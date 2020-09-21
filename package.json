@@ -1,6 +1,6 @@
 {
   "name": "@vue-interface/utils",
-  "version": "0.9.22",
+  "version": "0.9.23",
   "description": "A utility package for Vue Interface.",
   "main": "index.js",
   "scripts": {
