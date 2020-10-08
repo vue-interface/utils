@@ -1,6 +1,10 @@
-// babel.config.js
 module.exports = {
     presets: [
-        '@vue/cli-plugin-babel/preset'
+        ['@babel/preset', {
+            targets: {
+                node: "current",
+                browsers: "> 0.25%, not dead"
+            }
+        }]
     ]
 };
