@@ -1,3 +1,7 @@
+import 'core-js/features/object/assign';
+import 'core-js/features/object/entries';
+import 'core-js/features/object/from-entries';
+
 import camelCase from './src/camelCase';
 import capitalize from './src/capitalize';
 import debounce from './src/debounce';
