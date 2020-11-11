@@ -1,6 +1,6 @@
 {
   "name": "@vue-interface/utils",
-  "version": "0.9.26",
+  "version": "0.9.27",
   "description": "A utility package for Vue Interface.",
   "main": "dist/Utils.umd.js",
   "scripts": {
