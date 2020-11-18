@@ -2,8 +2,7 @@
   "name": "@vue-interface/utils",
   "version": "0.9.30",
   "description": "A utility package for Vue Interface.",
-  "module": "./index.js",
-  "main": "./dist/Utils.umd.js",
+  "main": "./index.js",
   "unpkg": "./dist/Utils.umd.min.js",
   "scripts": {
     "watch": "npm run serve",
@@ -35,21 +34,21 @@
   },
   "homepage": "https://github.com/vue-interface/utils/docs#readme",
   "dependencies": {
-    "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "core-js": "^3.6.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.7",
-    "@vue/cli-plugin-eslint": "^4.5.7",
     "@vue/cli-service": "^4.5.7",
     "@vuepress/plugin-register-components": "^1.5.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-vue": "^6.2.2",
+    "eslint": "^7.13.0",
+    "eslint-plugin-vue": "^7.1.0",
     "jest": "^26.2.2",
     "markdown-it-meta": "0.0.1",
+    "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11",
     "vuepress": "^1.5.2",
-    "vuepress-plugin-template-constants": "^0.2.1"
+    "vuepress-plugin-template-constants": "^0.2.1",
+    "webpack-cli": "^4.2.0"
   }
 }
