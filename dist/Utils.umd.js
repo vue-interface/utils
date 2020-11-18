@@ -688,17 +688,6 @@ module.exports = function (options, source) {
 
 /***/ }),
 
-/***/ "2418":
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__("cca6");
-var path = __webpack_require__("428f");
-
-module.exports = path.Object.assign;
-
-
-/***/ }),
-
 /***/ "241c":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1647,16 +1636,6 @@ module.exports = getBuiltIn('Reflect', 'ownKeys') || function ownKeys(it) {
 
 /***/ }),
 
-/***/ "5784":
-/***/ (function(module, exports, __webpack_require__) {
-
-var parent = __webpack_require__("a960");
-
-module.exports = parent;
-
-
-/***/ }),
-
 /***/ "5c6c":
 /***/ (function(module, exports) {
 
@@ -2225,16 +2204,6 @@ module.exports = function (Iterable, NAME, IteratorConstructor, next, DEFAULT, I
 
 /***/ }),
 
-/***/ "7edb":
-/***/ (function(module, exports, __webpack_require__) {
-
-var parent = __webpack_require__("2418");
-
-module.exports = parent;
-
-
-/***/ }),
-
 /***/ "7f9a":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2419,18 +2388,6 @@ var charAt = __webpack_require__("6547").charAt;
 module.exports = function (S, index, unicode) {
   return index + (unicode ? charAt(S, index).length : 1);
 };
-
-
-/***/ }),
-
-/***/ "8ac5":
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__("e260");
-__webpack_require__("c1f9");
-var path = __webpack_require__("428f");
-
-module.exports = path.Object.fromEntries;
 
 
 /***/ }),
@@ -3152,17 +3109,6 @@ var floor = Math.floor;
 module.exports = function (argument) {
   return isNaN(argument = +argument) ? 0 : (argument > 0 ? floor : ceil)(argument);
 };
-
-
-/***/ }),
-
-/***/ "a960":
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__("4fad");
-var path = __webpack_require__("428f");
-
-module.exports = path.Object.entries;
 
 
 /***/ }),
@@ -4711,16 +4657,6 @@ $({ target: PROMISE, stat: true, forced: INCORRECT_ITERATION }, {
 
 /***/ }),
 
-/***/ "e82b":
-/***/ (function(module, exports, __webpack_require__) {
-
-var parent = __webpack_require__("8ac5");
-
-module.exports = parent;
-
-
-/***/ }),
-
 /***/ "e893":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4912,15 +4848,6 @@ if (typeof window !== 'undefined') {
 
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
-
-// EXTERNAL MODULE: ./node_modules/core-js/features/object/assign.js
-var object_assign = __webpack_require__("7edb");
-
-// EXTERNAL MODULE: ./node_modules/core-js/features/object/entries.js
-var entries = __webpack_require__("5784");
-
-// EXTERNAL MODULE: ./node_modules/core-js/features/object/from-entries.js
-var from_entries = __webpack_require__("e82b");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.exec.js
 var es_regexp_exec = __webpack_require__("ac1f");
@@ -5773,9 +5700,6 @@ function transition(el, defaultValue) {
   return value !== null && value !== undefined && value !== false && isFinite(value) ? "".concat(value).concat(uom) : value;
 });
 // CONCATENATED MODULE: ./index.js
-
-
-
 
 
 
