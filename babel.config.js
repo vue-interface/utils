@@ -2,7 +2,9 @@ module.exports = {
     presets: [
         ['@vue/app', {
             corejs: 3,
-            useBuiltIns: "entry", // or "entry"
+            debug: false,
+            modules: false,
+            useBuiltIns: "entry", // or "usage"
             targets: {
                 browsers: "> .25%, not dead",
             }
