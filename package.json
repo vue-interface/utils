@@ -2,8 +2,8 @@
   "name": "@vue-interface/utils",
   "version": "0.9.31",
   "description": "A utility package for Vue Interface.",
-  "main": "./index.js",
-  "unpkg": "./dist/Utils.umd.min.js",
+  "main": "index.js",
+  "unpkg": "dist/Utils.umd.min.js",
   "scripts": {
     "watch": "npm run serve",
     "serve": "vue-cli-service build ./main.js --watch",
