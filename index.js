@@ -27,6 +27,7 @@ import property from './src/property';
 import readFile from './src/readFile';
 import script from './src/script';
 import sequence from './src/sequence';
+import throttle from './src/throttle';
 import toNumber from './src/toNumber';
 import transition from './src/transition';
 import transitionDuration from './src/transitionDuration';
@@ -62,6 +63,7 @@ export {
     readFile,
     script,
     sequence,
+    throttle,
     toNumber,
     transition,
     transitionDuration,
