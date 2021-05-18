@@ -2,6 +2,7 @@ import camelCase from './src/camelCase';
 import capitalize from './src/capitalize';
 import debounce from './src/debounce';
 import deepExtend from './src/deepExtend';
+import event from './src/event';
 import find from './src/find';
 import findIndex from './src/findIndex';
 import first from './src/first';
@@ -38,6 +39,7 @@ export {
     capitalize,
     debounce,
     deepExtend,
+    event,
     find,
     findIndex,
     first,
