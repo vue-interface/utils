@@ -193,6 +193,7 @@ __webpack_require__.d(__webpack_exports__, "camelCase", function() { return /* r
 __webpack_require__.d(__webpack_exports__, "capitalize", function() { return /* reexport */ capitalize; });
 __webpack_require__.d(__webpack_exports__, "debounce", function() { return /* reexport */ src_debounce; });
 __webpack_require__.d(__webpack_exports__, "deepExtend", function() { return /* reexport */ deepExtend; });
+__webpack_require__.d(__webpack_exports__, "event", function() { return /* reexport */ event_event; });
 __webpack_require__.d(__webpack_exports__, "find", function() { return /* reexport */ find; });
 __webpack_require__.d(__webpack_exports__, "findIndex", function() { return /* reexport */ findIndex; });
 __webpack_require__.d(__webpack_exports__, "first", function() { return /* reexport */ first; });
@@ -592,6 +593,25 @@ function deepExtend(target) {
 
   return deepExtend.apply(void 0, [target].concat(sources));
 }
+// CONCATENATED MODULE: ./src/event.js
+function event_event(key, eventInit) {
+  // Ensure the eventInit is an object.
+  eventInit = Object.assign({}, {
+    bubbles: false,
+    cancelable: false,
+    composed: false
+  }, eventInit || {}); // If the `Event` class is a constructor, use it.
+
+  if (typeof Event === 'function') {
+    return new Event(key, eventInit);
+  } // Otherwise, assume this to be a legacy browser.
+
+
+  var event = document.createEvent('Event'); // Define that the event name is 'build'.
+
+  event.initEvent(key, eventInit.bubbles, eventInit.cancelable);
+  return event;
+}
 // CONCATENATED MODULE: ./src/first.js
 function first(array) {
   return array && array.length ? array[0] : undefined;
@@ -950,6 +970,7 @@ function transition(el, defaultValue) {
   return value !== null && value !== undefined && value !== false && isFinite(value) ? "".concat(value).concat(uom) : value;
 });
 // CONCATENATED MODULE: ./index.js
+
 
 
 
